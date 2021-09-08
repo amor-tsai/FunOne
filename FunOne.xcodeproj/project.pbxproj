@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		313DE96626E84A6D0074F3C4 /* TableModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 313DE96526E84A6D0074F3C4 /* TableModel.m */; };
+		313DE96A26E84B8F0074F3C4 /* ImdbModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 313DE96926E84B8F0074F3C4 /* ImdbModel.swift */; };
 		317BBF9526E7FC4B00B3FBD0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 317BBF9426E7FC4B00B3FBD0 /* AppDelegate.swift */; };
 		317BBF9726E7FC4B00B3FBD0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 317BBF9626E7FC4B00B3FBD0 /* SceneDelegate.swift */; };
 		317BBF9926E7FC4B00B3FBD0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 317BBF9826E7FC4B00B3FBD0 /* ViewController.swift */; };
@@ -16,6 +18,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		313DE96326E84A6D0074F3C4 /* FunOne-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FunOne-Bridging-Header.h"; sourceTree = "<group>"; };
+		313DE96426E84A6D0074F3C4 /* TableModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TableModel.h; sourceTree = "<group>"; };
+		313DE96526E84A6D0074F3C4 /* TableModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TableModel.m; sourceTree = "<group>"; };
+		313DE96926E84B8F0074F3C4 /* ImdbModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImdbModel.swift; sourceTree = "<group>"; };
 		317BBF9126E7FC4B00B3FBD0 /* FunOne.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FunOne.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		317BBF9426E7FC4B00B3FBD0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		317BBF9626E7FC4B00B3FBD0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -60,9 +66,13 @@
 				317BBF9626E7FC4B00B3FBD0 /* SceneDelegate.swift */,
 				317BBF9826E7FC4B00B3FBD0 /* ViewController.swift */,
 				317BBF9A26E7FC4B00B3FBD0 /* Main.storyboard */,
+				313DE96426E84A6D0074F3C4 /* TableModel.h */,
+				313DE96526E84A6D0074F3C4 /* TableModel.m */,
+				313DE96926E84B8F0074F3C4 /* ImdbModel.swift */,
 				317BBF9D26E7FC4F00B3FBD0 /* Assets.xcassets */,
 				317BBF9F26E7FC4F00B3FBD0 /* LaunchScreen.storyboard */,
 				317BBFA226E7FC4F00B3FBD0 /* Info.plist */,
+				313DE96326E84A6D0074F3C4 /* FunOne-Bridging-Header.h */,
 			);
 			path = FunOne;
 			sourceTree = "<group>";
@@ -98,6 +108,7 @@
 				TargetAttributes = {
 					317BBF9026E7FC4B00B3FBD0 = {
 						CreatedOnToolsVersion = 12.5.1;
+						LastSwiftMigration = 1250;
 					};
 				};
 			};
@@ -137,9 +148,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				313DE96626E84A6D0074F3C4 /* TableModel.m in Sources */,
 				317BBF9926E7FC4B00B3FBD0 /* ViewController.swift in Sources */,
 				317BBF9526E7FC4B00B3FBD0 /* AppDelegate.swift in Sources */,
 				317BBF9726E7FC4B00B3FBD0 /* SceneDelegate.swift in Sources */,
+				313DE96A26E84B8F0074F3C4 /* ImdbModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -286,6 +299,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = F69WJ27LN4;
 				INFOPLIST_FILE = FunOne/Info.plist;
@@ -295,6 +309,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = SMU.FunOne;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "FunOne/FunOne-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -305,6 +321,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = F69WJ27LN4;
 				INFOPLIST_FILE = FunOne/Info.plist;
@@ -314,6 +331,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = SMU.FunOne;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "FunOne/FunOne-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
