@@ -39,5 +39,9 @@ class TableViewModel:NSObject{
         }
         return data
     }
+    
+    func getDataDictionary() -> [[String:Any]]? {
+        return self.dataDictionary
+    }
         
 }
