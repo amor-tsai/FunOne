@@ -8,9 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		3114738326E9835E00C89594 /* Pokemon.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3114738226E9835E00C89594 /* Pokemon.plist */; };
-		3114738526E9A1A000C89594 /* PokemonList.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3114738426E9A1A000C89594 /* PokemonList.plist */; };
+		3114738726E9B29100C89594 /* TableViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3114738626E9B29100C89594 /* TableViewModel.swift */; };
 		313DE96626E84A6D0074F3C4 /* TableModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 313DE96526E84A6D0074F3C4 /* TableModel.m */; };
-		313DE96A26E84B8F0074F3C4 /* ImdbModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 313DE96926E84B8F0074F3C4 /* ImdbModel.swift */; };
 		317BBF9526E7FC4B00B3FBD0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 317BBF9426E7FC4B00B3FBD0 /* AppDelegate.swift */; };
 		317BBF9726E7FC4B00B3FBD0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 317BBF9626E7FC4B00B3FBD0 /* SceneDelegate.swift */; };
 		317BBF9926E7FC4B00B3FBD0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 317BBF9826E7FC4B00B3FBD0 /* ViewController.swift */; };
@@ -21,11 +20,10 @@
 
 /* Begin PBXFileReference section */
 		3114738226E9835E00C89594 /* Pokemon.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Pokemon.plist; sourceTree = "<group>"; };
-		3114738426E9A1A000C89594 /* PokemonList.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = PokemonList.plist; sourceTree = "<group>"; };
+		3114738626E9B29100C89594 /* TableViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewModel.swift; sourceTree = "<group>"; };
 		313DE96326E84A6D0074F3C4 /* FunOne-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FunOne-Bridging-Header.h"; sourceTree = "<group>"; };
 		313DE96426E84A6D0074F3C4 /* TableModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TableModel.h; sourceTree = "<group>"; };
 		313DE96526E84A6D0074F3C4 /* TableModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TableModel.m; sourceTree = "<group>"; };
-		313DE96926E84B8F0074F3C4 /* ImdbModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImdbModel.swift; sourceTree = "<group>"; };
 		317BBF9126E7FC4B00B3FBD0 /* FunOne.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FunOne.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		317BBF9426E7FC4B00B3FBD0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		317BBF9626E7FC4B00B3FBD0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -69,13 +67,12 @@
 				317BBF9426E7FC4B00B3FBD0 /* AppDelegate.swift */,
 				317BBF9626E7FC4B00B3FBD0 /* SceneDelegate.swift */,
 				317BBF9826E7FC4B00B3FBD0 /* ViewController.swift */,
+				3114738626E9B29100C89594 /* TableViewModel.swift */,
 				317BBF9A26E7FC4B00B3FBD0 /* Main.storyboard */,
 				313DE96426E84A6D0074F3C4 /* TableModel.h */,
 				313DE96526E84A6D0074F3C4 /* TableModel.m */,
-				313DE96926E84B8F0074F3C4 /* ImdbModel.swift */,
 				317BBF9D26E7FC4F00B3FBD0 /* Assets.xcassets */,
 				317BBF9F26E7FC4F00B3FBD0 /* LaunchScreen.storyboard */,
-				3114738426E9A1A000C89594 /* PokemonList.plist */,
 				3114738226E9835E00C89594 /* Pokemon.plist */,
 				317BBFA226E7FC4F00B3FBD0 /* Info.plist */,
 				313DE96326E84A6D0074F3C4 /* FunOne-Bridging-Header.h */,
@@ -145,7 +142,6 @@
 				317BBFA126E7FC4F00B3FBD0 /* LaunchScreen.storyboard in Resources */,
 				317BBF9E26E7FC4F00B3FBD0 /* Assets.xcassets in Resources */,
 				317BBF9C26E7FC4B00B3FBD0 /* Main.storyboard in Resources */,
-				3114738526E9A1A000C89594 /* PokemonList.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -157,10 +153,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				313DE96626E84A6D0074F3C4 /* TableModel.m in Sources */,
+				3114738726E9B29100C89594 /* TableViewModel.swift in Sources */,
 				317BBF9926E7FC4B00B3FBD0 /* ViewController.swift in Sources */,
 				317BBF9526E7FC4B00B3FBD0 /* AppDelegate.swift in Sources */,
 				317BBF9726E7FC4B00B3FBD0 /* SceneDelegate.swift in Sources */,
-				313DE96A26E84B8F0074F3C4 /* ImdbModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
