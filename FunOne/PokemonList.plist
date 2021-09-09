@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Pockmon</key>
+	<dict>
+		<key>Raichu</key>
+		<dict>
+			<key>ID</key>
+			<string>#026</string>
+			<key>Name</key>
+			<string>Raichu</string>
+            <key>Icon</key>
+            <string>https://serebii.net/pokearth/sprites/gold/026.png</string>
+            <key>Type</key>
+            <string>Electr</string>
+		</dict>
+		<key>New item - 2</key>
+		<dict/>
+		<key>New item</key>
+		<dict/>
+		<key>ID</key>
+		<string>#025</string>
+		<key>Name</key>
+		<string></string>
+		<key>Icon</key>
+		<string>https://serebii.net/pokearth/sprites/gold/025.png</string>
+		<key>Type</key>
+		<string>Electr</string>
+	</dict>
+</dict>
+</plist>

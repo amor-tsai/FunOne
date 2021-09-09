@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3114738326E9835E00C89594 /* Pokemon.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3114738226E9835E00C89594 /* Pokemon.plist */; };
+		3114738526E9A1A000C89594 /* PokemonList.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3114738426E9A1A000C89594 /* PokemonList.plist */; };
 		313DE96626E84A6D0074F3C4 /* TableModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 313DE96526E84A6D0074F3C4 /* TableModel.m */; };
 		313DE96A26E84B8F0074F3C4 /* ImdbModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 313DE96926E84B8F0074F3C4 /* ImdbModel.swift */; };
 		317BBF9526E7FC4B00B3FBD0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 317BBF9426E7FC4B00B3FBD0 /* AppDelegate.swift */; };
@@ -18,6 +20,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3114738226E9835E00C89594 /* Pokemon.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Pokemon.plist; sourceTree = "<group>"; };
+		3114738426E9A1A000C89594 /* PokemonList.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = PokemonList.plist; sourceTree = "<group>"; };
 		313DE96326E84A6D0074F3C4 /* FunOne-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FunOne-Bridging-Header.h"; sourceTree = "<group>"; };
 		313DE96426E84A6D0074F3C4 /* TableModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TableModel.h; sourceTree = "<group>"; };
 		313DE96526E84A6D0074F3C4 /* TableModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TableModel.m; sourceTree = "<group>"; };
@@ -71,6 +75,8 @@
 				313DE96926E84B8F0074F3C4 /* ImdbModel.swift */,
 				317BBF9D26E7FC4F00B3FBD0 /* Assets.xcassets */,
 				317BBF9F26E7FC4F00B3FBD0 /* LaunchScreen.storyboard */,
+				3114738426E9A1A000C89594 /* PokemonList.plist */,
+				3114738226E9835E00C89594 /* Pokemon.plist */,
 				317BBFA226E7FC4F00B3FBD0 /* Info.plist */,
 				313DE96326E84A6D0074F3C4 /* FunOne-Bridging-Header.h */,
 			);
@@ -135,9 +141,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3114738326E9835E00C89594 /* Pokemon.plist in Resources */,
 				317BBFA126E7FC4F00B3FBD0 /* LaunchScreen.storyboard in Resources */,
 				317BBF9E26E7FC4F00B3FBD0 /* Assets.xcassets in Resources */,
 				317BBF9C26E7FC4B00B3FBD0 /* Main.storyboard in Resources */,
+				3114738526E9A1A000C89594 /* PokemonList.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
