@@ -6,12 +6,11 @@
 //
 
 import UIKit
-import SDWebImage
 
 class ViewController: UIViewController {
 
-    lazy var tableViewModel = {
-       return TableViewModel.sharedInstance()
+    lazy var tableModel = {
+       return TableModel.sharedInstance()
     }()
     
     @IBOutlet weak var WelcomeLable: UILabel!
@@ -32,17 +31,15 @@ class ViewController: UIViewController {
         self.gzcButtonShow()
         
         
-        if  let dataDict = self.tableViewModel.getDataDictionary(){
-           print(dataDict)
+        print(tableModel.numberOfItems())
+        print(tableModel.getNameWithIndex(index: 1))
+        print(tableModel.getImageNameWithName(name: "Raichu"))
            
 //           self.ImageView.sd_setImage(with: URL(string: "https://serebii.net/pokearth/sprites/gold/101.png"), placeholderImage: UIImage(named: "#101.png"))//to be replaced
             
             
         }
         
-        
-    }
-    
     func welcomeLableShow() {
         //WelcomeLable
         self.WelcomeLable.text = "Hello, welcome to this weird app!"

@@ -7,7 +7,7 @@
 
 import UIKit
 
-private let reuseIdentifier = "Cell"
+private let reuseIdentifier = "CollectionCell"
 
 class CCollectionViewController: UICollectionViewController {
 
@@ -18,7 +18,7 @@ class CCollectionViewController: UICollectionViewController {
         // self.clearsSelectionOnViewWillAppear = false
 
         // Register cell classes
-        self.collectionView!.register(UICollectionViewCell.self, forCellWithReuseIdentifier: reuseIdentifier)
+//        self.collectionView!.register(UICollectionViewCell.self, forCellWithReuseIdentifier: reuseIdentifier)
 
         // Do any additional setup after loading the view.
     }
@@ -33,25 +33,34 @@ class CCollectionViewController: UICollectionViewController {
     }
     */
 
+    lazy var tableModel = {
+        return TableModel.sharedInstance()
+    }()
+    
     // MARK: UICollectionViewDataSource
 
     override func numberOfSections(in collectionView: UICollectionView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 0
+        return 1
     }
 
 
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of items
-        return 0
+        return self.tableModel.numberOfItems()
     }
 
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath)
+        
+        if let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath) as? CollectionViewCell {
+            cell.imageView.image = self.tableModel.getImageWithIndex(index: indexPath.row)
+            return cell
+        } else {
+            fatalError("In CCollectionViewController, could not dequeue cell")
+        }
     
         // Configure the cell
     
-        return cell
     }
 
     // MARK: UICollectionViewDelegate

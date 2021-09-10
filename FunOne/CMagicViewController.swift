@@ -11,10 +11,12 @@ class CMagicViewController: UIViewController {
 
     @IBOutlet weak var Label: UILabel!
     
+    var lableText = "This lable can change color!"
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.Label.text = "This lable can change color!"
+        self.Label.text = self.lableText
         
         Timer.scheduledTimer(timeInterval: 1.0, target: self, selector: #selector(setLabelRandomBackgroundColor), userInfo: nil, repeats: true)
         
