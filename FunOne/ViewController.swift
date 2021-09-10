@@ -14,8 +14,6 @@ class ViewController: UIViewController {
        return TableViewModel.sharedInstance()
     }()
     
-    @IBOutlet weak var ImageView: UIImageView!
-    
     @IBOutlet weak var WelcomeLable: UILabel!
     
     @IBOutlet weak var WelcomeButton: UIButton!
@@ -37,8 +35,9 @@ class ViewController: UIViewController {
         if  let dataDict = self.tableViewModel.getDataDictionary(){
            print(dataDict)
            
-           self.ImageView.sd_setImage(with: URL(string: "https://serebii.net/pokearth/sprites/gold/101.png"), placeholderImage: UIImage(named: "#101.png"))//to be replaced
-
+//           self.ImageView.sd_setImage(with: URL(string: "https://serebii.net/pokearth/sprites/gold/101.png"), placeholderImage: UIImage(named: "#101.png"))//to be replaced
+            
+            
         }
         
         
@@ -46,7 +45,7 @@ class ViewController: UIViewController {
     
     func welcomeLableShow() {
         //WelcomeLable
-        self.WelcomeLable.text = "Hello, welcome!"
+        self.WelcomeLable.text = "Hello, welcome to this weird app!"
         self.WelcomeLable.textAlignment = .center
     }
     
