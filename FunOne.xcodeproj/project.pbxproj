@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 52;
+	objectVersion = 50;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -17,7 +17,6 @@
 		317BBFA126E7FC4F00B3FBD0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 317BBF9F26E7FC4F00B3FBD0 /* LaunchScreen.storyboard */; };
 		318265C226EB1B840070412B /* Second.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 318265C126EB1B840070412B /* Second.storyboard */; };
 		31982E9F26EC030F00204BB1 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31982E9E26EC030F00204BB1 /* CollectionViewCell.swift */; };
-		31B9491726E9C2670094653F /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = 31B9491626E9C2670094653F /* SDWebImage */; };
 		31DBFB2026EB48B900B0BA51 /* TableModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 31DBFB1D26EB48B900B0BA51 /* TableModel.m */; };
 		31DBFB2226EB492400B0BA51 /* CScorllViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31DBFB2126EB492400B0BA51 /* CScorllViewController.swift */; };
 		31DBFB2426EB499100B0BA51 /* CCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31DBFB2326EB499100B0BA51 /* CCollectionViewController.swift */; };
@@ -52,7 +51,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				31B9491726E9C2670094653F /* SDWebImage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -117,7 +115,6 @@
 			);
 			name = FunOne;
 			packageProductDependencies = (
-				31B9491626E9C2670094653F /* SDWebImage */,
 			);
 			productName = FunOne;
 			productReference = 317BBF9126E7FC4B00B3FBD0 /* FunOne.app */;
@@ -148,7 +145,6 @@
 			);
 			mainGroup = 317BBF8826E7FC4B00B3FBD0;
 			packageReferences = (
-				31B9491526E9C2670094653F /* XCRemoteSwiftPackageReference "SDWebImage" */,
 			);
 			productRefGroup = 317BBF9226E7FC4B00B3FBD0 /* Products */;
 			projectDirPath = "";
@@ -395,25 +391,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCRemoteSwiftPackageReference section */
-		31B9491526E9C2670094653F /* XCRemoteSwiftPackageReference "SDWebImage" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/SDWebImage/SDWebImage";
-			requirement = {
-				kind = exactVersion;
-				version = 5.11.1;
-			};
-		};
-/* End XCRemoteSwiftPackageReference section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		31B9491626E9C2670094653F /* SDWebImage */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 31B9491526E9C2670094653F /* XCRemoteSwiftPackageReference "SDWebImage" */;
-			productName = SDWebImage;
-		};
-/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 317BBF8926E7FC4B00B3FBD0 /* Project object */;
 }
