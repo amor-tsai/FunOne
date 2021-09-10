@@ -17,6 +17,7 @@
 		317BBF9C26E7FC4B00B3FBD0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 317BBF9A26E7FC4B00B3FBD0 /* Main.storyboard */; };
 		317BBF9E26E7FC4F00B3FBD0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 317BBF9D26E7FC4F00B3FBD0 /* Assets.xcassets */; };
 		317BBFA126E7FC4F00B3FBD0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 317BBF9F26E7FC4F00B3FBD0 /* LaunchScreen.storyboard */; };
+		318265C226EB1B840070412B /* Second.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 318265C126EB1B840070412B /* Second.storyboard */; };
 		31B9491726E9C2670094653F /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = 31B9491626E9C2670094653F /* SDWebImage */; };
 /* End PBXBuildFile section */
 
@@ -35,6 +36,7 @@
 		317BBF9D26E7FC4F00B3FBD0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		317BBFA026E7FC4F00B3FBD0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		317BBFA226E7FC4F00B3FBD0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		318265C126EB1B840070412B /* Second.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Second.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +78,7 @@
 				313DE96426E84A6D0074F3C4 /* TableModel.h */,
 				313DE96526E84A6D0074F3C4 /* TableModel.m */,
 				317BBF9A26E7FC4B00B3FBD0 /* Main.storyboard */,
+				318265C126EB1B840070412B /* Second.storyboard */,
 				317BBF9D26E7FC4F00B3FBD0 /* Assets.xcassets */,
 				317BBF9F26E7FC4F00B3FBD0 /* LaunchScreen.storyboard */,
 				3114738226E9835E00C89594 /* Pokemon.plist */,
@@ -151,6 +154,7 @@
 			files = (
 				3114738326E9835E00C89594 /* Pokemon.plist in Resources */,
 				317BBFA126E7FC4F00B3FBD0 /* LaunchScreen.storyboard in Resources */,
+				318265C226EB1B840070412B /* Second.storyboard in Resources */,
 				317BBF9E26E7FC4F00B3FBD0 /* Assets.xcassets in Resources */,
 				317BBF9C26E7FC4B00B3FBD0 /* Main.storyboard in Resources */,
 			);
