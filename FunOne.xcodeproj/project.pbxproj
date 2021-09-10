@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2DE9079426EBDED40006CC65 /* gzcViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DE9079326EBDED40006CC65 /* gzcViewController.swift */; };
+		2DE9079626EBF9000006CC65 /* bird.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2DE9079526EBF9000006CC65 /* bird.jpg */; };
 		3114738326E9835E00C89594 /* Pokemon.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3114738226E9835E00C89594 /* Pokemon.plist */; };
 		3128395126E9D491006DB4F1 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3128395026E9D491006DB4F1 /* TableViewController.swift */; };
 		317BBF9526E7FC4B00B3FBD0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 317BBF9426E7FC4B00B3FBD0 /* AppDelegate.swift */; };
@@ -25,6 +27,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2DE9079326EBDED40006CC65 /* gzcViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = gzcViewController.swift; sourceTree = "<group>"; };
+		2DE9079526EBF9000006CC65 /* bird.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = bird.jpg; sourceTree = "<group>"; };
 		3114738226E9835E00C89594 /* Pokemon.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Pokemon.plist; sourceTree = "<group>"; };
 		3128395026E9D491006DB4F1 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		317BBF9126E7FC4B00B3FBD0 /* FunOne.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FunOne.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -76,6 +80,7 @@
 		317BBF9326E7FC4B00B3FBD0 /* FunOne */ = {
 			isa = PBXGroup;
 			children = (
+				2DE9079326EBDED40006CC65 /* gzcViewController.swift */,
 				317BBF9426E7FC4B00B3FBD0 /* AppDelegate.swift */,
 				317BBF9626E7FC4B00B3FBD0 /* SceneDelegate.swift */,
 				317BBF9826E7FC4B00B3FBD0 /* ViewController.swift */,
@@ -93,7 +98,8 @@
 				317BBF9F26E7FC4F00B3FBD0 /* LaunchScreen.storyboard */,
 				3114738226E9835E00C89594 /* Pokemon.plist */,
 				317BBFA226E7FC4F00B3FBD0 /* Info.plist */,
-				31DBFB1E26EB48B900B0BA51 /* FunOne-Bridging-Header.h */,
+				313DE96326E84A6D0074F3C4 /* FunOne-Bridging-Header.h */,
+				2DE9079526EBF9000006CC65 /* bird.jpg */,
 			);
 			path = FunOne;
 			sourceTree = "<group>";
@@ -164,6 +170,7 @@
 				317BBFA126E7FC4F00B3FBD0 /* LaunchScreen.storyboard in Resources */,
 				318265C226EB1B840070412B /* Second.storyboard in Resources */,
 				317BBF9E26E7FC4F00B3FBD0 /* Assets.xcassets in Resources */,
+				2DE9079626EBF9000006CC65 /* bird.jpg in Resources */,
 				317BBF9C26E7FC4B00B3FBD0 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -185,6 +192,7 @@
 				31DBFB2626EB49D400B0BA51 /* CMagicViewController.swift in Sources */,
 				317BBF9526E7FC4B00B3FBD0 /* AppDelegate.swift in Sources */,
 				317BBF9726E7FC4B00B3FBD0 /* SceneDelegate.swift in Sources */,
+				2DE9079426EBDED40006CC65 /* gzcViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

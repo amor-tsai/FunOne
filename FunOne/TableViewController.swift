@@ -8,14 +8,10 @@
 import UIKit
 
 class TableViewController: UITableViewController {
-
-    lazy var tableModel:TableModel = {
-        return TableModel.sharedInstance()
-    }()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
@@ -30,6 +26,10 @@ class TableViewController: UITableViewController {
         return 3
     }
 
+    lazy var tableModel = {
+        return TableModel.sharedInstance()
+    }()
+    
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
         if section == 0 {
