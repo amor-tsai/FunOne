@@ -10,6 +10,9 @@ import UIKit
 class TableModel: NSObject {
     private var dataDictionary: [[String:Any]]? = []
     private let dataName = "Pokemon"
+    private var welComeImageURL = {
+        return Bundle.main.object(forInfoDictionaryKey: "welcomImageURL") as? String
+    }()
     private static let singleInstance: TableModel = {
        let shared = TableModel()
        return shared
@@ -92,6 +95,10 @@ class TableModel: NSObject {
             return UIImage(named: icon)
         }
         return nil
+    }
+    
+    func getWelcomeImageURL() -> String?{
+        return self.welComeImageURL
     }
     
 }
