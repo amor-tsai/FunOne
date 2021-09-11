@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import SDWebImage
 
 class ViewController: UIViewController {
 
@@ -19,6 +20,8 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var GzcButton: UIButton!
         
+    @IBOutlet weak var WelcomeImageView: UIImageView!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -34,9 +37,8 @@ class ViewController: UIViewController {
         print(tableModel.numberOfItems())
         print(tableModel.getNameWithIndex(index: 1))
         print(tableModel.getImageNameWithName(name: "Raichu"))
-           
-//           self.ImageView.sd_setImage(with: URL(string: "https://serebii.net/pokearth/sprites/gold/101.png"), placeholderImage: UIImage(named: "#101.png"))//to be replaced
-            
+        
+        self.WelcomeImageView.sd_setImage(with: URL(string: (self.tableModel.getWelcomeImageURL())!), placeholderImage: UIImage(named: self.tableModel.getWelcomeImageURL()!))//
             
         }
         
