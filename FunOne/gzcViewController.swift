@@ -39,7 +39,6 @@ class gzcViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDat
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
         pokemonName?.text = (pokemons[row] as! String)
         pokemonImage?.image = tm.getImageWithName(name: pokemons[row] as! String)
-        print(dict![row]["ATT"]!)
         valueLbl?.text = "\(dict![row]["ATT"]!)" as String
         stepper?.value = dict![row]["ATT"]! as! Double
         valueLbl1?.text = "\(dict![row]["DEF"]!)" as String
@@ -89,9 +88,11 @@ class gzcViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDat
         super.viewDidLoad()
         choosePokemonPicker?.delegate = self
         choosePokemonPicker?.dataSource = self
-        pokemonImage?.image = UIImage(named: "bird")
         pokemonName?.text = "empty"
-        
+        valueLbl?.text = "0"
+        valueLbl1?.text = "0"
+        valueLbl2?.text = "0"
+        valueLbl3?.text = "0"
         stepper?.autorepeat = true
         stepper?.isContinuous = true
         ATK.text = "ATT:"
@@ -103,6 +104,17 @@ class gzcViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDat
         
         self.scrollView.minimumZoomScale = 1.0
         self.scrollView.maximumZoomScale = 2.0
+        
+        pokemonName?.text = (pokemons[0] as! String)
+        pokemonImage?.image = tm.getImageWithName(name: pokemons[0] as! String)
+        valueLbl?.text = "\(dict![0]["ATT"]!)" as String
+        stepper?.value = dict![0]["ATT"]! as! Double
+        valueLbl1?.text = "\(dict![0]["DEF"]!)" as String
+        stepper1?.value = dict![0]["DEF"]! as! Double
+        valueLbl2?.text = "\(dict![0]["Speed"]!)" as String
+        stepper2?.value = dict![0]["Speed"]! as! Double
+        valueLbl3?.text = "\(dict![0]["HP"]!)" as String
+        slider?.value = dict![0]["HP"]! as! Float
     }
     
     @IBAction func stepperValueChanged(_ sender: UIStepper) {
