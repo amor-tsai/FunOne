@@ -8,6 +8,7 @@
 import UIKit
 
 class gzcViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource, UIScrollViewDelegate {
+    
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
         return 1
     }
@@ -40,8 +41,12 @@ class gzcViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDat
     @IBOutlet weak var valueLbl: UILabel?
     @IBOutlet weak var valueLbl1: UILabel?
     @IBOutlet weak var valueLbl2: UILabel?
+    @IBOutlet weak var valueLbl3: UILabel?
     @IBOutlet weak var stepper: UIStepper?
     @IBOutlet weak var stepper1: UIStepper?
+    @IBAction func slider(_ sender: UISlider) {
+        valueLbl3?.text = String(Int(sender.value))
+    }
     
     @IBOutlet var scrollView: UIScrollView!
     
@@ -69,6 +74,7 @@ class gzcViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDat
         valueLbl?.text = "0"
         valueLbl1?.text = "0"
         valueLbl2?.text = "0"
+        valueLbl3?.text = "0"
         stepper?.maximumValue = 100
         stepper?.minimumValue = 0
         
