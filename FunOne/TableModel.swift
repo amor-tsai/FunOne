@@ -7,6 +7,7 @@
 
 import UIKit
 
+//a protocol requires the dataDictionary
 protocol getDataProtocol {
     var dataDictionary:[[String:Any]] {get}
 }
