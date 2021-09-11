@@ -48,14 +48,14 @@ class ViewController: UIViewController {
     
     func welComeButtonShow() {
         //WelcomeButton
-        self.WelcomeButton.setTitle("Open them!", for: .normal)
+        self.WelcomeButton.setTitle("Info", for: .normal)
         self.WelcomeButton.backgroundColor = .clear
         self.WelcomeButton.layer.borderWidth = 1
         self.WelcomeButton.layer.borderColor = UIColor.blue.cgColor
     }
     
     func gzcButtonShow() {
-        self.GzcButton.setTitle("kick off!", for: .normal)
+        self.GzcButton.setTitle("Watch Them", for: .normal)
         self.GzcButton.backgroundColor = .clear
         self.GzcButton.layer.borderColor = UIColor.blue.cgColor
         self.GzcButton.layer.borderWidth = 1

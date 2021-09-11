@@ -18,6 +18,7 @@ class CMagicViewController: UIViewController {
         
         self.Label.text = self.lableText
         
+        //to change the lable's color
         Timer.scheduledTimer(timeInterval: 1.0, target: self, selector: #selector(setLabelRandomBackgroundColor), userInfo: nil, repeats: true)
         
         

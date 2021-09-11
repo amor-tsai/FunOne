@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		2DE9079426EBDED40006CC65 /* gzcViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DE9079326EBDED40006CC65 /* gzcViewController.swift */; };
-		2DE9079626EBF9000006CC65 /* bird.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2DE9079526EBF9000006CC65 /* bird.jpg */; };
 		3114738326E9835E00C89594 /* Pokemon.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3114738226E9835E00C89594 /* Pokemon.plist */; };
 		3128395126E9D491006DB4F1 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3128395026E9D491006DB4F1 /* TableViewController.swift */; };
 		317BBF9526E7FC4B00B3FBD0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 317BBF9426E7FC4B00B3FBD0 /* AppDelegate.swift */; };
@@ -28,7 +27,6 @@
 
 /* Begin PBXFileReference section */
 		2DE9079326EBDED40006CC65 /* gzcViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = gzcViewController.swift; sourceTree = "<group>"; };
-		2DE9079526EBF9000006CC65 /* bird.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = bird.jpg; sourceTree = "<group>"; };
 		3114738226E9835E00C89594 /* Pokemon.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Pokemon.plist; sourceTree = "<group>"; };
 		3128395026E9D491006DB4F1 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		317BBF9126E7FC4B00B3FBD0 /* FunOne.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FunOne.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -42,7 +40,6 @@
 		318265C126EB1B840070412B /* Second.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Second.storyboard; sourceTree = "<group>"; };
 		31982E9E26EC030F00204BB1 /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
 		31DBFB1D26EB48B900B0BA51 /* TableModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableModel.m; sourceTree = "<group>"; };
-		31DBFB1E26EB48B900B0BA51 /* FunOne-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "FunOne-Bridging-Header.h"; sourceTree = "<group>"; };
 		31DBFB1F26EB48B900B0BA51 /* TableModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableModel.h; sourceTree = "<group>"; };
 		31DBFB2126EB492400B0BA51 /* CScorllViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CScorllViewController.swift; sourceTree = "<group>"; };
 		31DBFB2326EB499100B0BA51 /* CCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CCollectionViewController.swift; sourceTree = "<group>"; };
@@ -98,8 +95,6 @@
 				317BBF9F26E7FC4F00B3FBD0 /* LaunchScreen.storyboard */,
 				3114738226E9835E00C89594 /* Pokemon.plist */,
 				317BBFA226E7FC4F00B3FBD0 /* Info.plist */,
-				313DE96326E84A6D0074F3C4 /* FunOne-Bridging-Header.h */,
-				2DE9079526EBF9000006CC65 /* bird.jpg */,
 			);
 			path = FunOne;
 			sourceTree = "<group>";
@@ -170,7 +165,6 @@
 				317BBFA126E7FC4F00B3FBD0 /* LaunchScreen.storyboard in Resources */,
 				318265C226EB1B840070412B /* Second.storyboard in Resources */,
 				317BBF9E26E7FC4F00B3FBD0 /* Assets.xcassets in Resources */,
-				2DE9079626EBF9000006CC65 /* bird.jpg in Resources */,
 				317BBF9C26E7FC4B00B3FBD0 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
