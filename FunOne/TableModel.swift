@@ -7,8 +7,13 @@
 
 import UIKit
 
-class TableModel: NSObject {
-    private var dataDictionary: [[String:Any]]? = []
+protocol getDataProtocol {
+    var dataDictionary:[[String:Any]] {get}
+}
+
+class TableModel: NSObject,getDataProtocol {
+    internal var dataDictionary: [[String : Any]] = [[:]]
+//    private var dataDictionary: [[String:Any]]? = []
     private let dataName = "Pokemon"
     private var welComeImageURL = {
         return Bundle.main.object(forInfoDictionaryKey: "welcomImageURL") as? String
@@ -24,7 +29,7 @@ class TableModel: NSObject {
     
     override init() {
         super.init()
-        self.dataDictionary = self.getData(dataName:self.dataName)
+        self.dataDictionary = self.getData(dataName:self.dataName)!
     }
     
     private func getData(dataName:String) -> [[String: Any]]? {
@@ -48,11 +53,11 @@ class TableModel: NSObject {
     }
     
     func numberOfItems() -> Int {
-        return self.dataDictionary?.count ?? 0
+        return self.dataDictionary.count
     }
     
     func getNameWithIndex(index:Int) -> String {
-        if let name = self.dataDictionary?[index]["Name"] as? String {
+        if let name = self.dataDictionary[index]["Name"] as? String {
             return name
         }
         return ""
@@ -60,7 +65,7 @@ class TableModel: NSObject {
     
     func getImageNameWithName(name:String) -> String {
         var imageName = ""
-        for item in self.dataDictionary! {
+        for item in self.dataDictionary {
             if item["Name"] as! String == name,
                let icon = item["Icon"] as? String {
                 imageName = icon
@@ -71,7 +76,7 @@ class TableModel: NSObject {
     }
     
     func getImageWithName(name:String) ->UIImage? {
-        for item in self.dataDictionary! {
+        for item in self.dataDictionary {
             if item["Name"] as! String == name,
                let icon = item["Icon"] as? String{
                 return UIImage(named: icon)
@@ -81,7 +86,7 @@ class TableModel: NSObject {
     }
     
     func getImageWithID(id:String) ->UIImage? {
-        for item in self.dataDictionary! {
+        for item in self.dataDictionary {
             if item["ID"] as! String == id,
                let icon = item["Icon"] as? String{
                 return UIImage(named: icon)
@@ -91,7 +96,7 @@ class TableModel: NSObject {
     }
     
     func getImageWithIndex(index:Int) -> UIImage? {
-        if let icon = self.dataDictionary?[index]["Icon"] as? String{
+        if let icon = self.dataDictionary[index]["Icon"] as? String{
             return UIImage(named: icon)
         }
         return nil
